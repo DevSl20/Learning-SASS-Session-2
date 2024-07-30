@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+
+}
+
+body{
+    padding: 20px 20px;
+}
+
+
+@mixin box($height, $width, $border){
+    height: $height;
+    width: $width;
+    border: $border;
+
+}
+.a{
+    @include box(200px, 400px, 4px solid lightblue);
+    // padding-bottom: 20px;
+}
+.b{
+    @include box(400px, 600px, 4px solid lightgreen);
+    // padding-top: 40px;
+}
